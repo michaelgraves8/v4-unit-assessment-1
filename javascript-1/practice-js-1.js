@@ -1,17 +1,24 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
+//CODE HERE
 
-//CODE HERE 
+let myName = 'Michael Graves'
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
 
+let faveNum = 8
+
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+
+let lovesCode = true
+
+
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -20,6 +27,10 @@
 */
 
 //CODE HERE
+
+function sum(num1, num2){
+  return num1 + num2
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -31,6 +42,16 @@
 
 //CODE HERE
 
+function trueOrFalse(data){
+  if (data = true){
+    return true
+  }
+  else if (data === false){
+  // else{
+    return false
+  }  
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
   Create a function called 'oddChecker' that takes in one parameter, 'num'. 
@@ -41,6 +62,15 @@
 
 //CODE HERE
 
+function oddChecker(num){
+  if (num % 2 === 0){
+    return 'the number is even'
+  }
+  else{
+    return 'the number is odd'
+  }
+}
+
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -50,6 +80,9 @@
 
 //CODE HERE
 
+function iLove(name, love){
+  return `${name} loves ${love}`
+}
 
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
@@ -58,10 +91,14 @@ const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
 
+let colorCopy = faveColors.slice(0, 4)
+
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+
+colorCopy.push('yellow')
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -72,6 +109,8 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+
+let middleNums = [2, 3, 4]
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -89,6 +128,15 @@ const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
 
+let me = {
+  firstName: 'Michael',
+  state: 'Utah',
+  age: 22,
+  greeter: function() {
+    return `Hello! My name is ${firstName} and I live in ${state}` 
+  } 
+}
+
 //////////////////PROBLEM 12////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -104,6 +152,21 @@ const numbers = [1, 2, 3, 4, 5]
 
 // CODE HERE
 
+function bigOrSmall(arr){
+  let answers = []
+  for(let i = 0; i < arr.length; i++){
+    if (i > 100){
+      answers.push('big')
+    }
+    else if (i <= 100){
+      answers.push('small')
+    }
+  }
+  return answers
+}
+
+
+
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -115,6 +178,14 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+
+function arrayReverser(arr){
+  let reversed = []
+  for(let i = 0; i > arr.length; i--){
+    reversed.push(i)
+  }
+  return reversed
+}
 
 //////////////////PROBLEM 14////////////////////
 

@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = 'Git is a version control system that helps organize and edit files'
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = 'GitHub is the website for Git users to share projects'
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -35,6 +38,11 @@
 
 //CODE HERE
 
+let init = {
+    description: 'git init initializes a new repository',
+    code: 'git init'
+}
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +50,11 @@
 */
 
 //CODE HERE
+
+let clone = {
+    description: 'git clone copies the repository into your directory so you can open it',
+    code: 'git clone'
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,6 +64,11 @@
 
 //CODE HERE
 
+let status = {
+    description: 'git status shows the status of the directory and what has been staged',
+    code: 'git status'
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,6 +76,12 @@
 */
 
 //CODE HERE
+
+let add = {
+    description: 'git add stages files',
+    code: 'git add'
+}
+
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,6 +91,13 @@
 
 //CODE HERE
 
+let commit = {
+    description: 'git commit saves the changes to your local repository',
+    code: 'git commit -m'
+}
+
+
+
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -75,6 +106,11 @@
 
 //CODE HERE
 
+let addRemote = {
+    description: 'git remote creates a remote repository',
+    code: 'git remote add origin'
+}
+
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -82,3 +118,8 @@
 */
 
 //CODE HERE
+
+let push = {
+    description: 'git push sends your local repository to a remote repository',
+    code: 'git push'
+}

@@ -3,10 +3,14 @@
 
 //CODE HERE
 
+let groceries = ['Milk', 'Eggs', 'Cheese']
+
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
 //CODE HERE
+
+let yourName = 'Michael Graves'
 
 //////////////////STEP 3////////////////////
 /*
@@ -18,6 +22,10 @@
 
 //CODE HERE
 
+function setGroceryListTitle(x){
+    return `${x}'s Grocery List`
+}
+
 //////////////////STEP 4////////////////////
 /* 
     Create a function called 'addItem' that takes in one parameter called 'item'. 
@@ -28,6 +36,11 @@
 
 //CODE HERE
 
+function addItem(item){
+    groceries.push(item)
+    displayData()
+}
+
 //////////////////STEP 5////////////////////
 /*
     Create a function called 'removeItem' that takes in one parameter called 'index'. 
@@ -37,6 +50,11 @@
 */
 
 //CODE HERE
+
+function removeItem(index){
+    groceries.splice(index, 1)
+    displayData()
+}
 
 //////////////////STEP 6////////////////////
 /*
@@ -50,6 +68,20 @@
 */
 
 //CODE HERE
+
+function checkGroceryCount(){
+    let groceryLength = groceries.length -1
+
+    if (groceryLength > 5){
+        return 'That looks like a big trip'
+    }
+    else if (groceryLength = 1){
+        return '1 item'
+    }
+    else if (groceryLength > 1 && groceryLength <= 5){
+        return `${groceryLength} items`
+    }
+ }
 
 
 //////////////////Check out your code!////////////////////
