@@ -181,7 +181,8 @@ function bigOrSmall(arr){
 
 function arrayReverser(arr){
   let reversed = []
-  for(let i = 0; i > arr.length; i--){
+  arrayLength = arr.length - 1
+  for(let i = arrayLength; i > 0; i--){
     reversed.push(i)
   }
   return reversed
@@ -211,16 +212,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -230,6 +231,11 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function firstItem(array, callBack) {
+  callBack(array[0]) 
+}
+
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -241,6 +247,15 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 
 //CODE HERE
 
+function isItBob(object, callBack) {
+  if (object === 'Bob'){
+    callBack(true)
+  }
+  else {
+    callBack(false)
+  }
+}
+
 //////////////////PROBLEM 17////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
@@ -249,6 +264,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function giveMeDoubles(array, callBack) {
+  for(let i = 0; i < array.length; i++){
+    i++
+  }
+  callBack(array)
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -276,3 +298,18 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function carFactory(make, model, year) {
+  let car = {
+    objMake: make,
+    objModel: model,
+    objYear: year,
+  }
+  if (year > 2018){
+    car[isNew] = true
+  }
+  else {
+    car[isNew] = false
+  }
+  return car
+}
